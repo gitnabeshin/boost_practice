@@ -34,7 +34,7 @@ int main()
 ```
 
 ```
-% g++ ./main.cpp
+% g++ -std=c++17 ./main.cpp
 % ./a.out       
 1
 3 
