@@ -10,6 +10,7 @@ int main()
     boost::flyweight<string> c(a.get() + b.get());
     boost::flyweight<string> d("abcabc");
 
+    // share the string "abc", "abcabc"
     cout << &a << ": " << &a.get() << ": " << a << endl;
     cout << &b << ": " << &b.get() << ": " << b << endl;
     cout << &c << ": " << &c.get() << ": " << c << endl;
