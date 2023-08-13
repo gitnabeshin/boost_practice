@@ -19,13 +19,18 @@ int main()
     {
         if (fs::is_directory(*it))
         {
-            cout << "D ";
+            cout << "Dir:   ";
         }
         else
         {
-            cout << "F ";
+            cout << "File: ";
         }
         cout << it->path().filename() << endl;
+        cout << "  path=" << it->path() << endl;
+        cout << "  root_path=" << it->path().root_path();
+        cout << ", root_name=" << it->path().root_name();
+        cout << ", parent_path=" << it->path().parent_path();
+        cout << ", is_absolute=" << it->path().is_absolute() << endl;
     }
     return 0;
 }

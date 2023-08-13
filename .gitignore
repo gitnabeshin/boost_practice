@@ -1,3 +1,4 @@
 .vscode
 *.out
 my_dir
+*.dat
